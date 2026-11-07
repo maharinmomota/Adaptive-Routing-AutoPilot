@@ -1,0 +1,22 @@
+enable
+configure terminal
+hostname R6
+interface GigabitEthernet0/0
+ description LOCAL_LAN
+ ip address 192.168.60.1 255.255.255.0
+ no shutdown
+interface GigabitEthernet0/1
+ description TO_R5
+ ip address 10.0.56.2 255.255.255.252
+ no shutdown
+interface GigabitEthernet0/2
+ description TO_R1
+ ip address 10.0.61.2 255.255.255.252
+ no shutdown
+router ospf 1
+ router-id 6.6.6.6
+ network 192.168.60.0 0.0.0.255 area 0
+ network 10.0.56.0 0.0.0.3 area 0
+ network 10.0.61.0 0.0.0.3 area 0
+end
+write memory

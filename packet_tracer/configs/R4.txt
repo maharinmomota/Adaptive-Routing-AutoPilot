@@ -1,0 +1,22 @@
+enable
+configure terminal
+hostname R4
+interface GigabitEthernet0/0
+ description LOCAL_LAN
+ ip address 192.168.40.1 255.255.255.0
+ no shutdown
+interface GigabitEthernet0/1
+ description TO_R3
+ ip address 10.0.34.2 255.255.255.252
+ no shutdown
+interface GigabitEthernet0/2
+ description TO_R5
+ ip address 10.0.45.1 255.255.255.252
+ no shutdown
+router ospf 1
+ router-id 4.4.4.4
+ network 192.168.40.0 0.0.0.255 area 0
+ network 10.0.34.0 0.0.0.3 area 0
+ network 10.0.45.0 0.0.0.3 area 0
+end
+write memory

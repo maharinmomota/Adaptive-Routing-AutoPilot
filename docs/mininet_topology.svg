@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="650" viewBox="0 0 1120 650">
+<rect width="1120" height="650" fill="#f7f9fc"/>
+<text x="560" y="35" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold" fill="#182235">Adaptive Routing AutoPilot — 12 PCs / 8 OVS switches</text>
+<g stroke="#60718a" stroke-width="4" fill="none" stroke-linecap="round">
+<path d="M170 170 L400 110"/>
+<path d="M400 110 L900 280"/>
+<path d="M170 170 L650 170"/>
+<path d="M650 170 L900 280"/>
+<path d="M400 110 L650 170"/>
+<path d="M400 110 L400 450"/>
+<path d="M400 450 L900 280"/>
+<path d="M650 170 L170 330"/>
+<path d="M170 330 L900 280"/>
+<path d="M400 450 L170 330"/>
+<path d="M900 280 L900 450"/>
+<path d="M900 450 L650 540"/>
+<path d="M650 540 L170 330"/>
+<path d="M900 450 L170 330"/>
+</g><g fill="#dceafe" stroke="#2457a6" stroke-width="3">
+<rect x="125" y="145" width="90" height="50" rx="9"/>
+<rect x="355" y="85" width="90" height="50" rx="9"/>
+<rect x="605" y="145" width="90" height="50" rx="9"/>
+<rect x="855" y="255" width="90" height="50" rx="9"/>
+<rect x="855" y="425" width="90" height="50" rx="9"/>
+<rect x="605" y="515" width="90" height="50" rx="9"/>
+<rect x="355" y="425" width="90" height="50" rx="9"/>
+<rect x="125" y="305" width="90" height="50" rx="9"/>
+</g><g font-family="Arial" font-size="19" font-weight="bold" fill="#17365f" text-anchor="middle">
+<text x="170" y="177">s1</text>
+<text x="400" y="117">s2</text>
+<text x="650" y="177">s3</text>
+<text x="900" y="287">s4</text>
+<text x="900" y="457">s5</text>
+<text x="650" y="547">s6</text>
+<text x="400" y="457">s7</text>
+<text x="170" y="337">s8</text>
+</g><g stroke="#73839a" stroke-width="2" fill="none">
+<path d="M170 196 V224"/>
+<path d="M900 306 V334"/>
+<path d="M900 476 V504"/>
+<path d="M650 566 V594"/>
+</g><g font-family="Arial" font-size="14" fill="#27364b" text-anchor="middle">
+<text x="170" y="243">h1 h2 h3</text>
+<text x="900" y="353">h4 h5 h6</text>
+<text x="900" y="523">h7 h8 h9</text>
+<text x="650" y="613">h10 h11 h12</text>
+</g><text x="560" y="625" text-anchor="middle" font-family="Arial" font-size="13" fill="#66758b">14 redundant inter-switch links · Host addresses 10.10.0.1–10.10.0.12/24 · Choose any distinct source/destination pair</text></svg>
